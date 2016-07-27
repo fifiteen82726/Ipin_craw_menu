@@ -1,8 +1,34 @@
-import requests
-from bs4 import BeautifulSoup
+{'kind':["Pork", 
+	'detail':['Pork soup', 'Pork noodle', 'Pork fried rice'],
+		'Chicken',
+	'detail':['Chicken soup','Chicken noodle'],
+		'Beef',
+	'detail':['Beef dumpling','Beef noodle']]}
 
-res = requests.get('http://www.xinshipu.com/zuofa/598664')
-soup = BeautifulSoup(res.text)
 
-title = soup.select('.re-up')
-print title
+
+ "contents": [
+    {
+      "name": "Pork",
+      "productName": ["Pork noodle", "Pork rice"]
+     
+    },
+    {
+      "name": "Beef",
+      "productName": ["Beef n", "Beed fuck"]
+    }
+  ],
+
+
+
+Pork 
+	Pork soup
+	Pork noodle
+	Pork fried rice
+Chicken
+	Chicken soup
+	Chicken noodle
+Beef
+	Beef dumpling
+	Beef noodle
+
