@@ -1,4 +1,8 @@
+# -*- coding: utf8 -*-
 import xlsxwriter
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 # Create a workbook and add a worksheet.
 workbook = xlsxwriter.Workbook('Expenses02.xlsx')
@@ -12,7 +16,7 @@ money = workbook.add_format({'num_format': '$#,##0'})
 
 # Write some data headers.
 worksheet.write('A1', 'Item', bold)
-worksheet.write('B1', 'Cost', bold)
+worksheet.write('B1', '狗', bold)
 
 # Some data we want to write to the worksheet.
 expenses = (
